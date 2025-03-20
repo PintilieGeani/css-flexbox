@@ -1,0 +1,36 @@
+/* Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 80%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+ul{
+    list-style: none;
+}
+
+.header{
+    background-color: lightblue;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+
+}
+
+.header-nav-list{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+}
+.header-nav-list li{
+    margin-left: 10px;
+}
