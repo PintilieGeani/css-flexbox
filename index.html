@@ -13,7 +13,25 @@
     <!--Flexbox-->
     <!--
     Il flexbox è una modalità di layout che si basa sul rapporto tra genitore (flex.container) e i figli all'interno. Sara flexbox a dire ai suoi figli come muoversi
+    il flax-container mi comanda solo i suoi FIGLI DIRETTI! i figli non diretti si comportano normalmente
 
+    nei flexbox esistono gli assi 
+    asse principale e asse secondaria
+    L'asse principale viene definita se il flex-direction è in row (orizzontale che è anche valore di default) oppure collum (verticale)
+    le prorietà vengono applicate lungo l'asse principale
+
+    justify-content: asse principale
+    align-items: asse secondaria
+
+    justify-content: space-between; lascia spazio in mezzo agli item ma attacca i primi e gli ultimi ai bordi
+    justify-content: space-around; stesso spazio a sinistra e destra di ogni item
+    justify-content: evenly; stesso spazio ovunque
+    row-reverse specchia il contenuto
+
+    align-items: stretch prende lo spazio a disposizione sull'asse secondaria
+
+    Flex box NON DISTRIBUISCE GLI ELEMENTI MA LO SPAZIO!! TRA GLI  ELEMENTI!
+        
 
     -->
     <div class="container my-20">
@@ -21,7 +39,9 @@
     </div>
     <div class="container">
         <div class="flex-container">
-            
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
         </div>
     </div>
 </body>
