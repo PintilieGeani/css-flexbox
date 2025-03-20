@@ -41,3 +41,19 @@
     background-color: lightblue;
 
 }
+
+/* Ricordare che vanno in ordine da sinistra a destra se non diamo l'order. Quidi saraà 00001 */
+
+.item-1{
+    order: 1;
+}
+
+.item-5{
+    order: 3;
+}
+
+/* Per mettere per primo */
+
+.item-7{
+    order: -1;
+}
