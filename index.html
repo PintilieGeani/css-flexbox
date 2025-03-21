@@ -34,6 +34,21 @@
 
     Flex-wrap: fa si che nel momento in cui non trova spazio per gli elementi il flexbox manda alla riga successiva
 
+    Flex-basis: imposta le dimensioni degli item lungo l'asse principale, assume gli stessi valori di width e height. Quindi è direttamente collegato al flex-direction
+
+    Flex-grow: gli item prendono sempre flex-grow 0 di defaul, quindi di solito prendono altezza e larghezza del contenuto. Se diamo flex-grow ad un item prende tutto lo spazio libero a disposizione a questo elemento. Se lo spazio c'è! Possiamo dare qualsiasi valore al flex-grow ma questo non vuol dire che raddoppia o triplica ma divide lo spazio che assegna e che ha a disposizione. quindi flex-grow 2 non è il doppio del flex-grow 1. Poi è ovvio che se un elemento ha più contenuto anche se gli do un glex-grow minore rimane comunque più lungo perchè la base di partenza è questa. Ricorda che tutte le regole del flex s riferiscono allo spazio non al contenuto
+
+    flex-shrink: la proprietà di flex-item che definisce la porzione di stringimento di questo item nel caso manchi spazio per contenere tutti i suoi fratelli.
+
+    flex ha come align-item: stetch di default
+
+    overflow: ghiden per nascondere tutto quello che esce dal contenitore, lo dai al contenitore.
+
+    display: flex ha come prorpietà di default: 
+    flex-direction: row
+    justify-content: flex-start
+    align-item: stetch
+
     -->
     <div class="container my-20">
         <h2>Hello!</h2>
@@ -50,6 +65,8 @@
             <div class="item item-8">8</div>
         </div>
     </div>
+
+
 </body>
 
 </html>
